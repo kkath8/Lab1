@@ -1,14 +1,31 @@
 <?php
 // Hardcoded grade value
-$grade = 95;
+$grade = 73;
 
-echo "Student Grade: $grade<br>";
+echo "
+<style>
+    body {
+        font-family: Verdana, Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+    h3 {
+        font-size: 28px;
+        color: #333333;
+    }
+    h2 {
+        font-size: 32px;
+    }
+</style>
+";
+
+echo "<h3>Student Grade: $grade</h3>";
 
 if ($grade >= 90) {
-    echo "With Honors<br>";
+    echo "<h2 style='color: green;'>With Honors</h2>";
 } elseif ($grade >= 75) {
-    echo "Passed<br>";
+    echo "<h2 style='color: blue;'>Passed</h2>";
 } else {
-    echo "Failed<br>";
+    echo "<h2 style='color: red;'>Failed</h2>";
 }
 ?>
